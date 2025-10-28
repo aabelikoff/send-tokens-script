@@ -51,8 +51,7 @@ async function main() {
     console.log("🔗 TX hash:", txResponse.hash);
 
     const receipt = await txResponse.wait();
-    console.log(receipt);
-
+   
     if (receipt.status === 1) {
       console.log(`✅ Success! Included in block ${receipt.blockNumber.toString()}`);
     } else {
