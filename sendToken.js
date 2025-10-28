@@ -24,7 +24,7 @@ async function main() {
 
     const wallet = new ethers.Wallet(SENDER_PRIVATE_KEY, provider);
 
-      console.log("Sending native tokens");
+    console.log("Sending native tokens");
     console.log("From:", wallet.address);
     console.log("To  :", RECIPIENT_ADDRESS);
     console.log("Amount :", amount);
